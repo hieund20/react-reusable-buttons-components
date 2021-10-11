@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "Noto Sans";
+    src: local("Noto_Sans"), url(./fonts/Noto_Sans/NotoSans-Regular.ttf) format("truetype");
+}
+
+$defaultColor: #e0e0e0;
+$defaultHoverFocusColor: #aeaeae;
+$defaultTextColor: #3f3f3f;
+
+$primaryColor: #2962ff;
+$primaryHoverFocusColor: #0039cb;
+$primaryTextColor: #ffffff;
+
+$secondaryColor: #455a64;
+$secondaryHoverFocusColor: #1c313a;
+$secondaryTextColor: #ffffff;
+
+$dangerColor: #d32f2f;
+$dangerHoverFocusColor: #9a0007;
+$dangerTextColor: #ffffff;
+
+$disabledTextColor: #9e9e9e;
+
+.btn {
+    border: none;
+    border-radius: 6px;
+
+    font-family: Noto Sans, serif;
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+/*Button Color*/
+.btn.btn--default {
+    background-color: $defaultColor;
+    color: $defaultTextColor;
+    &:hover {
+        background-color: $defaultHoverFocusColor;
+        cursor: pointer;
+    }
+    &:focus {
+        background-color: $defaultHoverFocusColor;
+    }
+}
+
+.btn.btn--primary {
+    background-color: $primaryColor;
+    color: $primaryTextColor;
+    &:hover {
+        background-color: $primaryHoverFocusColor;
+        cursor: pointer;
+    }
+    &:focus {
+        background-color: $primaryHoverFocusColor;
+    }
+}
+
+.btn.btn--secondary {
+    background-color: $secondaryColor;
+    color: $secondaryTextColor;
+    &:hover {
+        background-color: $secondaryHoverFocusColor;
+        cursor: pointer;
+    }
+    &:focus {
+        background-color: $secondaryHoverFocusColor;
+    }
+}
+
+.btn.btn--danger {
+    background-color: $dangerColor;
+    color: $dangerTextColor;
+    &:hover {
+        background-color: $dangerHoverFocusColor;
+        cursor: pointer;
+    }
+    &:focus {
+        background-color: $dangerHoverFocusColor;
+    }
+}
+
+/*Button Size*/
+.btn.btn--sm {
+    width: 73px;
+    height: 32px;
+    box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
+}
+
+.btn.btn--md {
+    width: 81px;
+    height: 36px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn.btn--lg {
+    width: 93px;
+    height: 42px;
+    box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
+}
+
+/*Button Outline*/
+.btn.btn--outline {
+    border: 1px solid $primaryHoverFocusColor; //blue = color var
+    color: $primaryHoverFocusColor; //blue = color var
+    background-color: #ffffff;
+    &:hover {
+        background-color: rgba($primaryHoverFocusColor, 0.1);
+    }
+    &:focus {
+        background-color: rgba($primaryHoverFocusColor, 0.1);
+    }
+}
+
+/*Button Text*/
+.btn.btn--text {
+    color: $primaryHoverFocusColor;
+    background-color: inherit !important;
+    box-shadow: none;
+    text-align: left;
+    &:hover {
+        background-color: rgba($primaryHoverFocusColor, 0.1) !important;
+        text-align: center;
+    }
+    &:focus {
+        background-color: rgba($primaryHoverFocusColor, 0.1) !important;
+        text-align: center;
+    }
+}
+
+/*Button Icon*/
+.btn.btn--startIcon {
+    width: 105px;
+    height: 36px;
+    box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
+}
+
+.btn--startIcon .material-icons {
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+    left: 0px;
+    margin-right: 5px;
+}
+
+.btn.btn--endIcon {
+    width: 105px;
+    height: 36px;
+    box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
+}
+
+.btn--endIcon .material-icons {
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+    left: 0px;
+    margin-left: 5px;
+}
+
+/*Button disableShadow*/
+.btn.btn--disableShadow {
+    box-shadow: none;
+}
+
+/*Button disabled*/
+.btn:disabled {
+    cursor: default !important;
+    background-color: $defaultColor;
+    color: $disabledTextColor;
+    box-shadow: none;
+    &:hover {
+        background-color: $defaultColor;
+    }
+}
