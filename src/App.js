@@ -57,6 +57,7 @@ function App() {
       <br />
       <Button
         startIcon='local_grocery_store'
+        color='primary'
       />
       <br />
       <br />
@@ -65,6 +66,7 @@ function App() {
       <br />
       <Button
         endIcon='local_grocery_store'
+        color='primary'
       />
       <br />
       <br />
@@ -73,6 +75,7 @@ function App() {
       <br />
       <Button
         size='sm'
+        color='primary'
       />
       <br />
       <br />
@@ -81,6 +84,7 @@ function App() {
       <br />
       <Button
         size='md'
+        color='primary'
       />
       <br />
       <br />
@@ -89,6 +93,7 @@ function App() {
       <br />
       <Button
         size='lg'
+        color='primary'
       />
       <br />
       <br />
